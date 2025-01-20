@@ -10,10 +10,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/sqlc-dev/sqlc/internal/codegen/golang/opts"
-	"github.com/sqlc-dev/sqlc/internal/codegen/sdk"
-	"github.com/sqlc-dev/sqlc/internal/metadata"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
+	"github.com/EnduIf/sqlc/internal/codegen/golang/opts"
+	"github.com/EnduIf/sqlc/internal/codegen/sdk"
+	"github.com/EnduIf/sqlc/internal/metadata"
+	"github.com/EnduIf/sqlc/internal/plugin"
 )
 
 type tmplCtx struct {

@@ -1,4 +1,4 @@
-module github.com/sqlc-dev/sqlc
+module github.com/EnduIf/sqlc
 
 go 1.22.9
 

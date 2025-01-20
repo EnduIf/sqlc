@@ -3,8 +3,8 @@ package compiler
 import (
 	"strings"
 
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/astutils"
+	"github.com/EnduIf/sqlc/internal/sql/ast"
+	"github.com/EnduIf/sqlc/internal/sql/astutils"
 )
 
 func arrayDims(n *ast.TypeName) int {

@@ -25,11 +25,11 @@ Ruby      `DaredevilOSS/sqlc-gen-ruby`_      Beta             Beta          Beta
 [Any]     `fdietze/sqlc-gen-from-template`_  Stable           Stable        Stable
 ========  =================================  ===============  ============  ===============
 
-.. _sqlc-gen-go: https://github.com/sqlc-dev/sqlc-gen-go
+.. _sqlc-gen-go: https://github.com/EnduIf/sqlc-gen-go
 .. _kaashyapan/sqlc-gen-fsharp: https://github.com/kaashyapan/sqlc-gen-fsharp
-.. _sqlc-gen-kotlin: https://github.com/sqlc-dev/sqlc-gen-kotlin
-.. _sqlc-gen-python: https://github.com/sqlc-dev/sqlc-gen-python
-.. _sqlc-gen-typescript: https://github.com/sqlc-dev/sqlc-gen-typescript
+.. _sqlc-gen-kotlin: https://github.com/EnduIf/sqlc-gen-kotlin
+.. _sqlc-gen-python: https://github.com/EnduIf/sqlc-gen-python
+.. _sqlc-gen-typescript: https://github.com/EnduIf/sqlc-gen-typescript
 .. _DaredevilOSS/sqlc-gen-csharp: https://github.com/DaredevilOSS/sqlc-gen-csharp
 .. _DaredevilOSS/sqlc-gen-ruby: https://github.com/DaredevilOSS/sqlc-gen-ruby
 .. _fdietze/sqlc-gen-from-template: https://github.com/fdietze/sqlc-gen-from-template
