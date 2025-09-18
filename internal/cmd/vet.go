@@ -304,6 +304,13 @@ func mysqlDefaultValue(col *plugin.Column) any {
 	}
 }
 
+// Return a default value for a QuestDB column based on its type. Returns nil
+// if the type is unknown.
+// QuestDB is PostgreSQL-compatible, so we reuse the PostgreSQL default values
+func questdbDefaultValue(col *plugin.Column) any {
+	return pgDefaultValue(col)
+}
+
 func (p *pgxConn) Explain(ctx context.Context, query string, args ...*plugin.Parameter) (*vetEngineOutput, error) {
 	eQuery := "EXPLAIN (ANALYZE false, VERBOSE, COSTS, SETTINGS, BUFFERS, FORMAT JSON) " + query
 	eArgs := make([]any, len(args))

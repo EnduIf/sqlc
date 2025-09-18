@@ -53,6 +53,7 @@ func (p *Paths) UnmarshalYAML(unmarshal func(interface{}) error) error {
 const (
 	EngineMySQL      Engine = "mysql"
 	EnginePostgreSQL Engine = "postgresql"
+	EngineQuestDB    Engine = "questdb"
 	EngineSQLite     Engine = "sqlite"
 )
 
