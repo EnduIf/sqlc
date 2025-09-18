@@ -84,6 +84,8 @@ func goInnerType(req *plugin.GenerateRequest, options *opts.Options, col *plugin
 		return mysqlType(req, options, col)
 	case "postgresql":
 		return postgresType(req, options, col)
+	case "questdb":
+		return questdbType(req, options, col)
 	case "sqlite":
 		return sqliteType(req, options, col)
 	default:

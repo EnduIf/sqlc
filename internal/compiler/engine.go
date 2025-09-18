@@ -10,6 +10,7 @@ import (
 	"github.com/EnduIf/sqlc/internal/engine/dolphin"
 	"github.com/EnduIf/sqlc/internal/engine/postgresql"
 	pganalyze "github.com/EnduIf/sqlc/internal/engine/postgresql/analyzer"
+	"github.com/EnduIf/sqlc/internal/engine/questdb"
 	"github.com/EnduIf/sqlc/internal/engine/sqlite"
 	"github.com/EnduIf/sqlc/internal/opts"
 	"github.com/EnduIf/sqlc/internal/sql/catalog"
@@ -58,6 +59,10 @@ func NewCompiler(conf config.SQL, combo config.CombinedSettings) (*Compiler, err
 				)
 			}
 		}
+	case config.EngineQuestDB:
+		c.parser = questdb.NewParser()
+		c.catalog = questdb.NewCatalog()
+		c.selector = newDefaultSelector()
 	default:
 		return nil, fmt.Errorf("unknown engine: %s", conf.Engine)
 	}
